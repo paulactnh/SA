@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
+
 <body>
     <header>
-        <select>
+        <select onchange="location = this.value">
+            <option disabled selected>Escolha a sua Página</option>
             <option value="index.html">Home</option>
             <option value="computacional.html">Lógica Computacional</option>
             <option value="programacao.html">Lógica de Programação</option>
@@ -19,6 +22,28 @@
         </select>
     </header>
     <h1>Situação de Aprendizagem</h1>
-
+    <h2>Fluxograma</h2>
+    <h3>O que é?</h3>
+    <p>Fluxogramas são representações gráficas de processos, sistemas ou algoritmos. Eles utilizam símbolos padronizados
+        para ilustrar a sequência de etapas ou ações realizadas, facilitando o entendimento, a análise e a comunicação
+        de um processo.
+    </p>
+    <h3>Tipos de Símbolos</h3>
+    <div class="card">
+        <p>Decisão</p>
+    </div>
+    <div class="card">
+        <p>Processo</p>
+    </div>
+    <div class="card">
+        <p>Início ou Fim</p>
+    </div>
+    <div class="card">
+        <p>Fluxo de Processo</p>
+    </div>
+    <div class="card">
+        <p>Entrada ou Saída</p>
+    </div>
 </body>
+
 </html>
