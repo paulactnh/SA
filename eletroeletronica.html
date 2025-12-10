@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>Eletroeletrônica</title>
 </head>
 <body>
     <header>
@@ -15,11 +15,170 @@
             <option value="programacao.html">Lógica de Programação</option>
             <option value="eletroeletronica.html">Fundamentos de Eletroeletrônica</option>
             <option value="redes.html">Fundamento de Redes</option>
-            <option value="bancoDados.html">Fundamentos de Bancos de Dados</option>
+            <option value="bancoDados.html">Fundamentos de Banco de Dados</option>
             <option value="tecnoInfo.html">Fundamentos da Tecnologia da Informação</option>
         </select>
     </header>
-    <h1>Situação de Aprendizagem</h1>
-
+    <h1>Fundamentos de Eletroeletrônica</h1>
+    <div class="bloco">
+        <h2>Componentes Eletrônicos</h2>
+        <p>Os componentes eletrônicos são a base de qualquer circuito, permitindo controlar corrente, tensão e sinais.
+            Entre os principais utilizados em serviços de eletrônica estão:</p>
+    
+        <div class="item">
+            <h3>Resistor</h3>
+            <p>Limita a passagem de corrente elétrica, protegendo componentes e ajustando níveis de tensão.</p>
+        </div>
+    
+        <div class="item">
+            <h3>Diodo LED</h3>
+            <p>Um tipo de diodo emissor de luz usado como indicador visual em dispositivos e circuitos.</p>
+        </div>
+    
+        <div class="item">
+            <h3>Transistor</h3>
+            <p>Usado para amplificar sinais ou atuar como chave eletrônica em sistemas digitais e analógicos.</p>
+        </div>
+    
+        <div class="item">
+            <h3>Circuito Integrado (CI)</h3>
+            <p>Conjunto de componentes miniaturizados em um único chip. Podem conter amplificadores, controladores,
+               temporizadores, processadores e muito mais.</p>
+        </div>
+    </div>
+    
+    <div class="bloco">
+        <h2>Sensores em Sistemas Automatizados</h2>
+        <p>Sensores são dispositivos capazes de detectar variações no ambiente e convertê-las em sinais elétricos usados
+           em automação. Alguns dos principais sensores são:</p>
+    
+        <div class="item">
+            <h3>Sensor de Temperatura</h3>
+            <p>Mede a variação térmica do ambiente ou de componentes. Ex.: LM35, DHT22.</p>
+        </div>
+    
+        <div class="item">
+            <h3>Sensor de Umidade</h3>
+            <p>Utilizado em estufas, meteorologia, sistemas de irrigação e automação residencial.</p>
+        </div>
+    
+        <div class="item">
+            <h3>Sensor de Luminosidade</h3>
+            <p>Detecta níveis de luz. Ex.: LDR, fototransistor.</p>
+        </div>
+    
+        <div class="item">
+            <h3>Outros Sensores</h3>
+            <p>Incluem sensores de presença (PIR), distância (ultrassônico), gás, pressão, vibração e muitos outros.</p>
+        </div>
+    </div>
+    
+    <div class="bloco">
+        <h2>Arduino: O que é e Para que Serve</h2>
+        <p>O Arduino é uma plataforma de prototipagem eletrônica formada por uma placa com microcontrolador e um ambiente
+           de programação. É usado para criar projetos de automação, robótica, IoT, estudos de eletrônica e sistemas
+           embarcados.</p>
+        <p><strong>Aplicações:</strong> robôs, casas inteligentes, estações meteorológicas, controle de motores,
+           automação industrial e monitoramento ambiental.</p>
+        <p><strong>Vantagens:</strong> fácil de usar, grande comunidade, baixo custo, muitos sensores compatíveis.</p>
+        <p><strong>Desvantagens:</strong> menor poder de processamento que placas avançadas, pouca memória e velocidade
+           limitada.</p>
+    </div>
+    
+    <div class="bloco">
+        <h2>Como o Arduino Funciona?</h2>
+        <p>O Arduino funciona como um microcontrolador que recebe dados de sensores (entradas), processa informações por
+           meio de um programa interno e aciona atuadores (saídas), como LEDs, motores e displays. Esse conceito faz parte
+           da <strong>eletrônica embarcada</strong>, que integra hardware e software dentro de equipamentos para realizar
+           funções automáticas.</p>
+    </div>
+    
+    <div class="bloco">
+        <h2>Linguagem de Programação do Arduino</h2>
+        <p>O Arduino utiliza uma linguagem baseada em <strong>C/C++</strong>. Também é possível programá-lo usando Python,
+           MicroPython ou plataformas visuais como ArduBlock, mas o padrão oficial é o C++ adaptado.</p>
+    </div>
+    
+    <div class="bloco">
+        <h2>Entradas e Saídas Digitais</h2>
+        <p>Entradas e saídas digitais (GPIO) trabalham com apenas dois estados: <strong>0 ou 1</strong>, 
+           <strong>LOW ou HIGH</strong>, <strong>desligado ou ligado</strong>.</p>
+        <p>Exemplos de uso: botões, LEDs, relés, sensores de presença, alarmes e comunicação digital simples.</p>
+    </div>
+    
+    <div class="bloco">
+        <h2>Entradas e Saídas Analógicas</h2>
+        <p>Entradas analógicas permitem ler valores variáveis, como intensidade de luz, temperatura ou posição. 
+           São convertidos por um ADC (Conversor Analógico-Digital).</p>
+        <p>Saídas analógicas no Arduino geralmente usam PWM, simulando níveis de intensidade, como controlar a velocidade
+           de um motor ou o brilho de um LED.</p>
+    </div>
+    
+    <section class="p0">
+        <p class="p1">Calculadora eletrônica:</p>
+        <br>
+        <div class="scripts">
+          <p class="p2">Calcular tensão:</p>
+          <br>
+          <label for="resis">Digite o valor da Resistência:</label><br>
+          <input type="text" id="resis">
+          <br>
+          <label for="corren">Digite o valor da Corrente:</label><br>
+          <input type="number" id="corren">
+          <br>
+          <br>
+          <button onclick="tensao()">Calcular</button>
+          <br>
+          <div id="res8"></div>
+          </div>
+          <br>
+        <div class="scripts">
+          <p class="p2">Calcular Resistência:</p>
+          <br>
+          <label for="tens2">Digite o valor da Tensão:</label><br>
+          <input type="text" id="tens2">
+          <br>
+          <label for="corren2">Digite o valor da Corrente:</label><br>
+          <input type="number" id="corren2">
+          <br>
+          <br>
+          <button onclick="resis()">Calcular</button>
+          <br>
+          <div id="res9"></div>
+          </div>
+          <br>
+        <div class="scripts">
+          <p class="p2">Calcular Corrente:</p>
+          <br>
+          <label for="tens3">Digite o valor da Tensão:</label><br>
+          <input type="text" id="tens3">
+          <br>
+          <label for="resis3">Digite o valor da Resistência:</label><br>
+          <input type="number" id="resis3">
+          <br>
+          <br>
+          <button onclick="coren()">Calcular</button>
+          <br>
+          <div id="res11"></div>
+          </div>
+          <br>
+        <div class="scripts">
+          <p class="p2">Calcular Potência:</p>
+          <br>
+          <label for="tens4">Digite o valor da Tensão:</label><br>
+          <input type="text" id="tens4">
+          <br>
+          <label for="coren4">Digite o valor da Corrente:</label><br>
+          <input type="number" id="coren4">
+          <br>
+          <br>
+          <button onclick="poten()">Calcular</button>
+          <br>
+          <div id="res10"></div>
+          </div>
+      </section>
+      <footer>
+        <p>By Paula Coutinho &copy; &trade;</p>
+    </footer>
 </body>
 </html>

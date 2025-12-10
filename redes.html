@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>Redes</title>
 </head>
+
 <body>
     <header>
         <select onchange="location = this.value">
@@ -15,11 +17,136 @@
             <option value="programacao.html">Lógica de Programação</option>
             <option value="eletroeletronica.html">Fundamentos de Eletroeletrônica</option>
             <option value="redes.html">Fundamento de Redes</option>
-            <option value="bancoDados.html">Fundamentos de Bancos de Dados</option>
+            <option value="bancoDados.html">Fundamentos de Banco de Dados</option>
             <option value="tecnoInfo.html">Fundamentos da Tecnologia da Informação</option>
         </select>
     </header>
-    <h1>Situação de Aprendizagem</h1>
+    <h1>Fundamento de Redes</h1> <br><br>
+    <div class="bloco">
+        <h2>Redes de Computadores</h2>
+        <p>Uma rede de computadores é um conjunto de dispositivos (computadores, servidores, roteadores etc.)
+            interconectados, que podem trocar dados entre si.</p>
+    </div>
+    <div class="bloco">
+        <h2>Rede Miníma</h2>
+        <p>Esse termo não tem uma definição universal bem padronizada — poderia significar, por exemplo, o menor
+            conjunto de máquinas e conexões necessário para constituir uma rede funcional (como 2 computadores
+            conectados diretamente), ou uma rede com o menor número possível de dispositivos/serviços. Em geral, depende
+            do contexto em que o termo é usado.</p>
+    </div>
+    <div class="bloco">
+        <h2>Internet</h2>
+        <p>A Internet é, essencialmente, uma gigantesca rede de computadores — ou melhor, um conjunto de muitas redes
+            interligadas — usando protocolos comuns, que permite comunicação global entre dispositivos.
+        </p>
+    </div>
+    <div class="bloco">
+        <h2>World Wide Web</h2>
+        <p>A Web é um dos serviços que funcionam sobre a Internet: um sistema de publicação e acesso a
+            páginas/informações (hipertexto, hipermídia) usando protocolos da camada de aplicação.
+        </p>
+    </div>
+    <div class="bloco">
+        <h2>Fibra Óptica</h2>
+        <p>Esse “mapa de fibra óptica global” revela que mesmo a “Internet” que pensamos como algo virtual depende de
+            infraestrutura física real — cabos, repetidores, estações terrestres subaquáticas, roteadores. Esse tipo de
+            mapa deixa mais tangível a ideia da Internet como algo “realmente conectado no mundo físico”.
+        </p>
+        <img src="img/fibra_optica.png" alt="">
+    </div>
+    <div class="bloco">
+        <h2>Componentes de Hardware na Rede Wifi</h2>
+        <p>
+            Roteador ou ponto de acesso (access point) com antena/de modem Wi-Fi — que transmite sinais sem fio (ondas
+            de rádio).
+            Dispositivos clientes com adaptadores Wi-Fi (notebook, celular, smart TV, etc.).
+            Infraestrutura de “backbone” ou conexão à Internet (modem, fibra, cabo, enlace com o provedor).
+        </p>
+    </div>
+    <div class="bloco">
+        <h2>Componentes de Hardware na Rede Local</h2>
+        <p>Cabos de rede (ex: cabo Ethernet Cat5e, Cat6, etc.)
+            Switches ou hubs para conectar múltiplos dispositivos.
+            Roteador (às vezes combinado com modem).
+            Placas de rede nos dispositivos finais (computadores, servidores) — ou interfaces físicas.
+        </p>
+    </div>
+    <div class="bloco">
+        <h2>Protocolo de Comunicação</h2>
+        <p>Um protocolo de rede é um conjunto padronizado de regras para formatação, envio, recepção e interpretação de
+            dados entre máquinas. Permite que diferentes dispositivos “conversem” com clareza. Em redes, protocolos são
+            organizados por camadas: cada camada tem responsabilidades claras, e um protocolo de camada alta “desce”
+            pelas camadas até alcançar o hardware, que transmite os dados fisicamente.
+        </p>
+    </div>
+    <div class="bloco">
+        <h2>Modelo OSI</h2>
+        <p>É um modelo de referência teórico criado para padronizar e estruturar a comunicação em redes através de 7
+            camadas: Física, Enlace, Rede, Transporte, Sessão, Apresentação e Aplicação.
+        </p>
+        <img src="img/osi.jpg" alt="">
+    </div>
+    <div class="bloco">
+        <h2>Modelo TCP/IP</h2>
+        <p>É o conjunto de protocolos efetivamente usado pela Internet moderna. Tem uma estrutura mais prática, com 4
+            camadas: Aplicação, Transporte, Internet e Acesso à Rede. Equivale à implementação real da comunicação entre
+            diversos computadores na Internet.
+        </p>
+        <img src="img/itp.png" alt="">
+    </div>
+    <div class="bloco">
+        <h2>Protocolo IPV4</h2>
+        <p>
+            É a versão tradicional do Protocolo de Internet. Usa endereços de 32 bits, normalmente expressos como quatro
+            octetos (ex: 192.168.0.1). IPv4 é “sem conexão” e baseado no conceito de comutação de pacotes: envia pacotes
+            pela rede sem garantir uma conexão contínua de longa duração.
+        </p>
+        <h2>Protocolo IPV6</h2>
+        <p>É a versão mais recente do protocolo IP, criada para superar limitações do IPv4 — especialmente a limitação
+            de endereços (IPv4 tem ~4,3 bilhões de endereços possíveis, o que não é suficiente diante de tantos
+            dispositivos). IPv6 usa endereços de 128 bits — o que amplia drasticamente o espaço de endereçamento.</p>
+    </div>
+    <div class="bloco">
+        <h2>Protocolo HTTP & HTTPS</h2>
+        <p>HTTP (HyperText Transfer Protocol) É o protocolo de comunicação usado na Web para transferência de páginas,
+            arquivos, recursos entre cliente (browser) e servidor. Faz parte da camada de aplicação.
+            HTTPS é a versão segura do HTTP, usando criptografia (SSL/TLS) para proteger os dados transmitidos entre
+            cliente e servidor — garantindo confidencialidade e integridade.
+        </p>
+        <img src="img/http.png" alt="">
+    </div>
+    <div class="bloco">
+        <h2>Configuração do IP e o TCP em uma programação backend com node.js</h2>
+        <p>Normalmente ao programar um servidor em Node.js você não precisa “configurar” o IP/TCP manualmente — o
+            sistema operacional e a pilha de rede do servidor cuidam disso. O que você faz no backend é “ouvir”
+            requisições em uma porta, usando algo como sockets ou um framework HTTP.
+            Você basicamente define a porta e o endereço de escuta (às vezes 0.0.0.0 ou localhost) ao iniciar o
+            servidor. O sistema operacional lida com a implementação de TCP/IP.
+        </p>
+        <img src="img/backend.png" alt="">
+        <h3> Exemplo de framework HTTP em Node.js</h3>
+        <p> Um dos frameworks mais usados é o Express (Node.js). Ele facilita a criação de servidores HTTP, definição de
+            rotas, tratamento de requisições/respostas etc.</p>
+        <img src="img/framework.png" alt="">
+    </div>
+    <div class="bloco">
+        <h2>Exemplos de Backend</h2>
+        <img src="img/back-end1.png" alt="">
+        <img src="img/bavk-end2.png" alt="">
+        <img src="img/back-end3.png" alt="">
+    </div>
 
+    <div class="bloco">
+        <p class="p3">Vídeo do projeto:</p>
+        <br>
+
+        <div class="btn">
+            <a href="https://youtu.be/Wik6ctEpsag" target="_blank" class="btn-codigo">Link do vídeo</a>
+        </div>
+    </div>
+    <footer>
+        <p>By Paula Coutinho &copy; &trade;</p>
+    </footer>
 </body>
+
 </html>
