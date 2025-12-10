@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
+
 <body>
     <header>
         <select onchange="location = this.value">
@@ -19,7 +21,138 @@
             <option value="tecnoInfo.html">Fundamentos da Tecnologia da Informação</option>
         </select>
     </header>
-    <h1>Situação de Aprendizagem</h1>
+
+    <div>
+        <section>
+            <h2>1. O que são Linguagens de Programação?</h2>
+            <p>Linguagens de programação são conjuntos de regras e comandos usados para criar programas. Com elas, desenvolvedores conseguem orientar o computador a executar tarefas e transformar ideias em softwares, jogos e sites.</p>
+
+            <ul>
+                <li>
+                    <h3> C++</h3>
+                    <p>Linguagem compilada, rápida e usada em jogos, sistemas operacionais e aplicações que exigem
+                        alto desempenho.</p>
+                </li>
+                <li>
+                    <h3> JavaScript</h3>
+                    <p>Usada na criação de páginas web interativas e também no back-end com Node.js.</p>
+                </li>
+                <li>
+                    <h3> Java</h3>
+                    <p>Multiplataforma e orientada a objetos. Muito usada em apps Android e sistemas corporativos.
+                    </p>
+                </li>
+                <li>
+                    <h3> Python</h3>
+                    <p>Linguagem simples e versátil, usada em IA, ciência de dados, automação e educação.</p>
+                </li>
+                <li>
+                    <h3> PHP</h3>
+                    <p>Voltada ao desenvolvimento web e bastante utilizada em sites e servidores, como no WordPress.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Interpretada vs Compilada</h2>
+            <p><strong>Interpretada:</strong> o código é executado linha por linha, sem gerar um arquivo final.</p>
+            <p><strong>Compilada:</strong> o código é convertido antes em um executável, geralmente garantindo mais
+                velocidade.</p>
+        </section>
+
+        <section>
+            <h2>3. O que é HTML e CSS?</h2>
+            <p><strong>HTML:</strong> estrutura o conteúdo de uma página.</p>
+            <p><strong>CSS:</strong> define o estilo visual, como cores, fontes e layout.</p>
+        </section>
+
+        <section>
+            <h2>4. O que é uma IDE?</h2>
+            <p>Uma IDE é um programa que reúne ferramentas para escrever, testar e corrigir códigos em um único
+                lugar.</p>
+            <p>Exemplos: VSCode, IntelliJ, Eclipse.</p>
+        </section>
+
+          <h2>5. Script para ordenar números de 1 a 20</h2>
+<pre><code>// Ordem crescente
+let crescente = [];
+for(let i = 1; i <= 20; i++) crescente.push(i);
+console.log(crescente);
+
+
+// Ordem decrescente
+let decrescente = [];
+for(let i = 20; i >= 1; i--) decrescente.push(i);
+console.log(decrescente);</code></pre>
+</section>
+
+
+<section>
+<h2>6. Script para ordenar 10 números aleatórios com BubbleSort</h2>
+<pre><code>let arr = [];
+for(let i = 0; i < 10; i++) arr.push(Math.floor(Math.random()*20)+1);
+
+
+for(let i = 0; i < arr.length; i++){
+for(let j = 0; j < arr.length - 1; j++){
+if(arr[j] > arr[j+1]){
+let temp = arr[j];
+arr[j] = arr[j+1];
+arr[j+1] = temp;
+}
+}
+}
+console.log(arr);</code></pre>
+</section>
+
+
+<section>
+<h2>7. Script para somar 10 números aleatórios de 1 a 20</h2>
+<pre><code>let numeros = [];
+for(let i = 0; i < 10; i++) numeros.push(Math.floor(Math.random()*20)+1);
+
+
+let soma = 0;
+for(let n of numeros) soma += n;
+console.log("Soma:", soma);</code></pre>
+</section>
+
+
+<section>
+<h2>8. Script para gerar uma matriz 3x3 com números aleatórios</h2>
+<pre><code>let matriz = [];
+for(let i = 0; i < 3; i++){
+let linha = [];
+for(let j = 0; j < 3; j++){
+linha.push(Math.floor(Math.random()*20)+1);
+}
+matriz.push(linha);
+}
+console.log(matriz);</code></pre>
+</section>
+
+
+<section>
+<h2>9. Script para calcular o IMC</h2>
+<pre><code>let peso = 70;
+let altura = 1.75;
+let imc = peso / (altura * altura);
+console.log("IMC:", imc.toFixed(2));</code></pre>
+</section>
+
+
+<section>
+<h2>10. Script para converter temperatura entre ºF e ºC</h2>
+<pre><code>// Celsius para Fahrenheit
+let C = 30;
+let F = (C * 9/5) + 32;
+console.log(F);
+
+
+// Fahrenheit para Celsius
+</div>
 
 </body>
+
 </html>
